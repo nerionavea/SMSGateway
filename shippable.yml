@@ -1,8 +1,9 @@
 language: ruby
 rvm:
   - 2.3.1
-
-- secure: hT6897+yV/2O2aUqaT8rF032Q7HvJ/BFIyTLK+TEUoUOePMNIbK2js7Krjbc/+TGuFiZ2YQ398kmn197yX5r2E36kH3pxZHaGaSkEC9jlKaIa14Ajpbe7MvmwlarEq+rPz0It/sNeY5QmcYH/oB5NOPIblPnzYw86/TFuzvtT8a7slFLPygjSgiCUJiSkg5dv1B44/sTGuuO2YaKHg/0pkFlrKzlAHr00pDJjCMo58CCbeLZJdQpq4oY5XAkz5ZUF9SH7tNjHBAF6GzRzsKQKiEGr0IyqFIXKEOwvmr8q3jjOxs77fOjeQDrlliWW8dyCzBgC8e7UtKebFiwdH1wuA==
+env: 
+  global:
+    - secure: hT6897+yV/2O2aUqaT8rF032Q7HvJ/BFIyTLK+TEUoUOePMNIbK2js7Krjbc/+TGuFiZ2YQ398kmn197yX5r2E36kH3pxZHaGaSkEC9jlKaIa14Ajpbe7MvmwlarEq+rPz0It/sNeY5QmcYH/oB5NOPIblPnzYw86/TFuzvtT8a7slFLPygjSgiCUJiSkg5dv1B44/sTGuuO2YaKHg/0pkFlrKzlAHr00pDJjCMo58CCbeLZJdQpq4oY5XAkz5ZUF9SH7tNjHBAF6GzRzsKQKiEGr0IyqFIXKEOwvmr8q3jjOxs77fOjeQDrlliWW8dyCzBgC8e7UtKebFiwdH1wuA==
 
 before_script:
   - bundle install
