@@ -4,9 +4,16 @@ RSpec.describe SMSGateway::SMS do
   describe "::new" do 
     describe "when is valid" do 
       let(:sms) { SMSGateway::SMS.new(number: "04125491920", message: "Hi world") }
+      before { sms.set_user(email: ENV["SMSGATEWAY_EMAIL"], password: ENV["SMSGATEWAY_PASSWORD"]) } 
 
       it "should return a valid sms" do 
         expect(sms.valid?).to be(true)  
+      end
+
+      describe "#deliver" do 
+        it "should response success" do 
+          expect(sms.deliver.success?).to be(true)
+        end
       end
     end
 
